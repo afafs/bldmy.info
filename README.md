@@ -1,2 +1,2 @@
-# bldmy.info
-bldmy.info
+# mymq.app
+mymq.app
