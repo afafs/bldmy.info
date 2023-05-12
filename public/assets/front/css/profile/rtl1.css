@@ -1,0 +1,72 @@
+
+.template-header .language-selector.bordered-style .current-language-flag{
+    right: auto;
+    left: 15px;
+}
+.template-header .language-selector.bordered-style .nice-select{
+    padding: 0 25px 0 25px;
+}
+.template-header .language-selector.bordered-style .nice-select{
+    text-align: right !important;
+}
+.template-header .nav-menu li .sub-menu{
+    left: auto;
+    right: 0;
+}
+.template-header .nav-menu li a .dd-trigger{
+    padding-left: 0px;
+    padding-right: 6px;
+}
+.template-header .language-selector.bordered-style{
+    margin-left: 0px;
+    margin-right: 60px;
+}
+.hero-section .hero-text .social-links a{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.experience-list .single-experience{
+    padding-left: 0px;
+    padding-right: 60px;
+}
+.experience-list .single-experience:not(:last-child)::after{
+    left: auto;
+    right: 11px;
+}
+.experience-list .single-experience::before{
+    left: auto;
+    right: 0;
+}
+.experience-wrapper .experience-wrapper-title span{
+    margin-right: 0px;
+    margin-left: 15px;
+}
+.testimonial-box-one .content{
+    padding-left: 0px;
+    padding-right: 25px;
+}
+.latest-blog-post .post-meta li:not(:last-child){
+    margin-right: 0px;
+    margin-left: 25px;
+}
+.latest-blog-post .post-meta li a i{
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.template-header .language-selector.transparent-style .nice-select::after{
+    margin: 0 15px 0 0;
+}
+.template-header .navbar-toggler{
+    margin-left: 0px;
+    margin-right: 30px;
+}
+.page-content-section,
+.contact-section,
+.latest-blog-section,
+.testimonial-section,
+.experience-section,
+.skill-section,
+.about-section,
+.hero-section{
+    text-align: right;
+}

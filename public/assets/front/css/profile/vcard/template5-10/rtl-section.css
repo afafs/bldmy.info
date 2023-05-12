@@ -1,0 +1,20 @@
+.contact-section-widget,
+.testimonial-section-widget,
+.portfolio-section-widget,
+.video-section-widget,
+.service-section-widget,
+.about-section-widget{
+    text-align: right;
+}
+.service-section-widget .service-item .content .button .main-btn{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.testimonial-section-widget .testimonial-arrows .slick-arrow.prev, .portfolio-section-widget .portfolio-arrows .slick-arrow.prev{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.testimonial-section-widget .testimonial-item .thumb{
+    margin-right: 0px;
+    margin-left: 20px;
+}

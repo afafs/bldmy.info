@@ -1,0 +1,85 @@
+.page-area{
+    text-align: right;
+}
+.user-btn i{
+    margin-right: 0;
+    margin-left: 10px;
+}
+.admin-box-one .admin-info-box .share-btn{
+    right: auto;
+    left: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+.admin-box-one .user-thumb{
+    margin-right: 0;
+    margin-left: 30px;
+}
+.contact-info-six .info-box .icon,
+.contact-info-three .info-box .icon,
+.contact-info-one .info-box .icon {
+    margin-left: 25px;
+    margin-right: 0;
+}
+.page-area-one .section-widget h3.widget-title{
+    border-left: none;
+    border-right: 2px solid var(--red-dark);
+    padding-left: 0;
+    padding-right: 8px;
+}
+.testimonial-arrows .slick-arrow.prev, .service-arrows .slick-arrow.prev, .project-arrows .slick-arrow.prev{
+    margin-right: 0;
+    margin-left: 5px;
+}
+.project-area-one .project-item{
+    margin-right: 0;
+    margin-left: 8px;
+}
+.contact-info-four .info-box .icon,
+.contact-info-two .info-box .icon,
+.testimonial-area-one .testimonial-item .testimonial-content .author-title-thumb .author-thumb{
+    margin-right: 0;
+    margin-left: 20px;
+}
+.page-area-two .section-widget h3.widget-title:after{
+    margin-left: 0;
+    margin-right: 15px;
+}
+.service-area-five .service-item,
+.project-area-two .project-item,
+.service-area-two .service-slider-one .service-item{
+    margin-right: 0;
+    margin-left: 10px;
+}
+.page-area-three .section-widget h3.widget-title:before{
+    right: auto;
+    left: -25px;
+}
+.page-area-three .section-widget h3.widget-title:after{
+    right: auto;
+    left: -35px;
+    margin-left: 0;
+    margin-right: 27px;
+}
+.service-area-three .service-item{
+    margin-right: 0;
+    margin-left: 15px;
+}
+.admin-box-five .admin-info-box .user-thumb .share-btn, .admin-box-four .admin-info-box .user-thumb .share-btn{
+    right: auto;
+    left: -10px;
+}
+.testimonial-area-four .testimonial-item .testimonial-content .author-title-thumb .author-thumb{
+    margin-right: 0;
+    margin-left: 15px;
+}
+.contact-info-five .info-box .icon{
+    margin-right: 0;
+    margin-left: 30px;
+}
+.project-area-five .project-item{
+    margin-right: 0;
+    margin-left: 20px;
+}
+.modal-header .close {
+    margin: -1rem -1rem -1rem 0;
+}

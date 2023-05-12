@@ -1,0 +1,32 @@
+
+.page-wrapper{
+    text-align: right;
+}
+.page-info-widget .info-widget .content{
+    margin-left: 0px;
+    margin-right: 30px;
+}
+.page-content-one .page-info-widget .info-widget .icon:after{
+    right: auto;
+    left: -3px;
+}
+.page-content-one .page-info-widget .rectangle span:nth-child(1){
+    right: auto;
+    left: 0;
+}
+.page-content-one .page-info-widget .rectangle span:nth-child(2){
+    right: auto;
+    left: 80px;
+}
+.page-content-one .page-info-widget .rectangle span:nth-child(3){
+    right: auto;
+    left: -40px;
+}
+.modal-header .close {
+    margin: -1rem auto -1rem -1rem;
+    float: left;
+}
+.testimonial-section-widget .testimonial-item .thumb {
+    margin-right: 0;
+    margin-left: 20px;
+}

@@ -1,0 +1,37 @@
+
+@media screen and (max-width: 1779px) {
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .about-area .about-content-box {
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+    .skill-area .skill-img {
+        margin-right: -20px;
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .about-area .about-content-box {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .skill-area .skill-img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+@media (max-width: 767px) {
+    
+}
+@media only screen and (max-width: 349px) {
+    
+}
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+    
+}

@@ -1,0 +1,55 @@
+body {
+    text-align: right;
+}
+.dropdown-menu{
+    text-align: right;
+}
+.sidebar-widget-area .widget.recent-post-widget .recent-post-list .post-thumbnail-content img {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.sidebar-widget-area .widget.categories-widget ul.widget-link li a span{
+    float: left;
+}
+.single-page-details .single-page-wrapper .post-share ul.social-link li a i {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.sidebar-widget-area .widget.recent-post-widget .recent-post-list .post-thumbnail-content .post-title-date .posted-on i {
+    margin-right: 10px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+.sidebar-widget-area .widget.search-widget .form_group .search_btn {
+    right: auto;
+    left: 20px;
+}
+.sidebar-widget-area .widget h4.widget-title {
+    text-align: right;
+}
+.sidebar-widget-area .widget.categories-widget ul.widget-link li {
+    text-align: right;
+}
+.sidebar-widget-area .widget.recent-post-widget .recent-post-list .post-thumbnail-content .post-title-date .posted-on {
+    text-align: right;
+}
+.single-page-details,
+.single-page-wrapper{
+    text-align: right;
+}
+.single-page-details .single-page-wrapper .post-item .entry-content .entry-meta ul li:after {
+    margin-left: 8px;
+    margin-right: 10px;
+}
+.single-page-details .single-page-wrapper .post-item .entry-content .entry-meta ul li span i {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.single-page-details .single-page-wrapper .post-share ul.social-link li {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.nice-select .option {
+    padding-right: 15px;
+    text-align: right;
+}

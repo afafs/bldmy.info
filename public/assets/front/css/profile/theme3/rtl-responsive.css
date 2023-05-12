@@ -1,0 +1,43 @@
+
+@media screen and (max-width: 1650px) {
+    .hero-area .hero-img{
+        right: auto;
+        left: 50px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+}
+@media only screen and (max-width: 991px) {
+    .main-wrapper{
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    .navigation-wrapper{
+        transform: translateX(80px);
+    }
+    .navbar-toggler {
+        float: right;
+    }
+    .testimonial-area .testimonial-item .author-info{
+        padding-left: 0px;
+        padding-right: 35px;
+    }
+    .testimonial-area .testimonial-item .author-info:before{
+        left: auto;
+        right: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    
+}
+@media (max-width: 767px) {
+    
+}
+@media only screen and (max-width: 349px) {
+    
+}
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+    
+}

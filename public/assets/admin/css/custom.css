@@ -1,0 +1,174 @@
+.wrapper .pignose-calendar .icon-arrow-left, .wrapper .pignose-calendar .icon-arrow-right{
+    font-family: 'Font Awesome 5 Solid' !important;
+}
+
+.wrapper .pignose-calendar .icon-arrow-right:before{
+    content: '\f054' !important;
+}
+.wrapper .pignose-calendar .icon-arrow-left:before{
+    content: '\f053' !important;
+}
+.logo-header .nav-toggle .btn-toggle{
+    color: #575962 !important;
+}
+body[data-background-color=dark] .logo-header .nav-toggle .btn-toggle{
+    color: #fff !important;
+}
+
+.menu-builder-list .list-group-item{
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+}
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: #66bb6a;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* request loader css start */
+.request-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000007a;
+    z-index: 10000;
+    display: none;
+}
+
+.request-loader img {
+    position: fixed;
+    display: none;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.request-loader.show {
+    display: block;
+}
+
+.request-loader.show img {
+    display: block;
+}
+
+/* request loader css end */
+
+.ui-timepicker-container.ui-timepicker-no-scrollbar.ui-timepicker-standard {
+    position: absolute;
+    max-height: 230px;
+    overflow-y: scroll;
+    max-width: 160px;
+    overflow-x: hidden;
+}
+
+.ui-timepicker-container.ui-timepicker-no-scrollbar.ui-timepicker-standard {
+    z-index: 10000 !important;
+}
+
+.ui-menu .ui-menu-item a {
+    display: block;
+    text-align: center;
+}
+
+ul.ui-timepicker-viewport {
+    padding: 0;
+}
+
+.datepicker td,
+.datepicker th {
+    color: #000 !important;
+}
+
+.datepicker td.active,
+.datepicker th.active {
+    color: #fff !important;
+}
+
+  .pignose-calendar .pignose-calendar-header div.pignose-calendar-week {
+      color: #000000 !important;
+      /* Set the color of the text in the weekend cells */
+  }
+
+ .pignose-calendar .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit-date a {
+     color: #49c4d0;
+     /* Set the color of the text in the weekend cells */
+ }
+
+  .pignose-calendar .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit-date.pignose-calendar-unit-first-active a {
+      color: #ffffff;
+      /* Set the color of the text in the weekend cells */
+  }
+
+  .pignose-calendar.pignose-calendar-dark .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-sun a {
+      color: #51cfd2 !important;
+  }
+  
+  .pignose-calendar.pignose-calendar-dark .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-disabled a {
+    color: #868e8f !important;
+}
+
+  .pignose-calendar .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit-date.pignose-calendar-unit-disabled:not(.pignose-calendar-unit-disabled-range) a {
+      color: #ff6060 !important;
+      /* Set the color of the text in the weekend cells */
+  }
+
+
+.select2-container {
+    width: 100% !important;
+}
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #ced4da !important;
+}
+

@@ -1,0 +1,79 @@
+
+.primary-menu .main-menu ul li > a{
+	padding: 20px 70px 20px 20px;
+}
+.primary-menu .main-menu ul li a i {
+	left: auto;
+	right: 20px;
+}
+.nav-toggoler{
+	left: auto;
+	right: 0;
+}
+.nav-toggoler.active{
+	left: 0px;
+	right: 300px;
+}
+.portfolio-item-one .portfolio-img .portfolio-content,
+.resume-item .resume-content:before,
+.navigation-wrapper{
+	left: auto;
+	right: 0;
+}
+.primary-menu .main-menu ul li a i{
+	margin-right: 0px;
+	margin-left: 30px;
+}
+.main-wrapper{
+	margin-left: 0;
+	margin-right: 300px;
+}
+.skill-list .single-skill h5 span {
+    float: left;
+}
+.service-item-one .service-content{
+	border-left: none;
+	border-right: 15px solid #0B0840;
+}
+.resume-title h5:before {
+    margin-right: 0px;
+	margin-left: 20px;
+}
+.resume-title h5:after {
+    margin-left: 0px;
+	margin-right: 20px;
+}
+.resume-item .resume-content {
+	padding-right: 20px;
+    padding-left: 0px;
+}
+.blog-post-item-one .entry-content .post-meta ul li {
+    margin-right: 0px;
+	margin-left: 25px;
+}
+.post-meta ul li span i {
+    margin-right: 0px;
+	margin-left: 5px;
+}
+.testimonial-item-one .tm-author-info .author-thumb{
+	margin-right: 0px;
+	margin-left: 20px;
+}
+.testimonial-item-one:after{
+	right: auto;
+	left: 30px;
+}
+.testimonial-area,
+.navigation-wrapper,
+.blog-area,
+.portfolio-area,
+.resume-area,
+.service-area,
+.skills-area,
+.about-area{
+	text-align: right;
+}
+.language-selector {
+    right: auto;
+    left: 10px;
+}

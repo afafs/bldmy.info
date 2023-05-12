@@ -1,0 +1,29 @@
+
+
+
+@media (min-width: 1200px){
+    .pl-xl-5, .px-xl-5 {
+        padding-left: 0rem!important;
+        padding-right: 3rem!important;
+    }
+}
+@media (max-width: 1199px) {
+    .testimonial-box-one .content {
+        padding-left: 0;
+        padding-right: 0px;
+    }
+}
+@media (min-width: 992px){
+    .pr-lg-5, .px-lg-5 {
+        padding-right: 0rem!important;
+        padding-left: 3rem!important;
+    }
+}
+@media (max-width: 575px) {
+    .template-header .navbar-toggler{
+        margin-right: 10px;
+    }
+    .template-header .language-selector.bordered-style {
+        margin-right: 0px;
+    }
+}

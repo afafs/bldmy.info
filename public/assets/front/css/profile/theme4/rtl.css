@@ -1,0 +1,87 @@
+
+
+
+.header-right-nav{
+    float: left;
+}
+.header-right-nav ul.social-link li {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+.header-right-nav .lang-dropdown {
+    margin-left: 00px;
+    margin-right: 30px;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+.header-right-nav .lang-dropdown .lang {
+    left: auto;
+    right: 0;
+}
+.about-area .about-content-box {
+    margin-left:0px;
+    margin-right: 100px;
+}
+.section-title span.sub-title:after {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.section-title span.sub-title:before {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.skill-area .skill-img {
+    margin-left: 0px;
+    margin-right: -100px;
+    margin-right: 0px;
+    margin-left: 50px;
+}
+.skill-area .skill-content-box .skill-wrapper .skill-item h5 span.percentage{
+	margin-left: 0px;
+    margin-right: 10px;
+}
+.btn-link{
+    padding-left: 0;
+    padding-right: 20px;
+}
+.btn-link span.btn-cirle{
+    left: auto;
+    right: 0;
+}
+.btn-link span.btn-cirle:after{
+    left: auto;
+    right: -15px;
+}
+.btn-link:after{
+    margin-left: 0px;
+    margin-right: 15px;
+}
+.resume-area .resume-wrapper .resume-item .resume-content {
+    padding-left: 0px;
+    padding-right: 25px;
+}
+.resume-area .resume-wrapper .resume-item .resume-content:after{
+    left: auto;
+    right: 0;
+}
+.post-meta ul li i {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.main-btn.arrow-btn:after{
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.header-right-nav .navbar-toggler {
+    margin-left:0px;
+    margin-right: 25px;
+}
+.blog-area,
+.testimonial-area,
+.resume-area,
+.skill-area,
+.about-area,
+.hero-area,
+.header-area{
+    text-align: right;
+}

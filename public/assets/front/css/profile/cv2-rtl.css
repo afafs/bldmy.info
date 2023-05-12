@@ -1,0 +1,38 @@
+
+
+.cv-wrapper{
+    text-align: right;
+}
+.cv-wrapper .cv-header .user-content .user-info li .info {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.cv-wrapper .cv-body .info-box-item .content .single-timeline .timeline-content{
+    padding-left: 0px;
+    padding-right: 30px;
+}
+.cv-wrapper .cv-body .info-box-item .content .single-timeline .timeline-content:before{
+    left: auto;
+    right: 0;
+}
+.cv-wrapper .cv-body .info-box-item .content .single-timeline .timeline-content:after{
+    left: auto;
+    right: 6px;
+}
+.cv-wrapper .cv-body .info-box-item .title h5:after{
+    left: auto;
+    right: 0;
+}
+.cv-wrapper .cv-body .info-box-item .content .single-skill .progress-steps span.dot{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.cv-wrapper .cv-body .info-box-item .content .single-timeline .timeline-content ul.list li:before{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.cv-wrapper .cv-body .info-box-item .title h5 i{
+	margin-right: 0px;
+	margin-left: 10px;
+}

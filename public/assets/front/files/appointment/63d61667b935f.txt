@@ -1,0 +1,364 @@
+@extends('user.layout')
+
+
+@if (!empty($input->language) && $input->language->rtl == 1)
+    @section('styles')
+        <style>
+            form input,
+            form textarea,
+            form select {
+                direction: rtl;
+            }
+
+            .nicEdit-main {
+                direction: rtl;
+                text-align: right;
+            }
+        </style>
+    @endsection
+@endif
+
+
+
+@section('content')
+    <div class="page-header">
+        <h4 class="page-title">{{ __('Item Variation ') }}</h4>
+        <ul class="breadcrumbs">
+            <li class="nav-home">
+                <a href="{{ route('user-dashboard') }}">
+                    <i class="flaticon-home"></i>
+                </a>
+            </li>
+            <li class="separator">
+                <i class="flaticon-right-arrow"></i>
+            </li>
+            <li class="nav-item">
+                <a href="#">{{ __('Variation Management') }}</a>
+            </li>
+            <li class="separator">
+                <i class="flaticon-right-arrow"></i>
+            </li>
+            <li class="nav-item">
+                <a href="#">{{ __('Variations') }}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                <div class="row">
+                    <div class="col-lg-6">
+                        {{ __('Edit Input') }}
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <a class="btn btn-primary"
+                            href="{{ route('user.item.index') . '?language=' . request()->input('language') }}">{{ __('Back') }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <form id="ajaxForm" action="{{ route('user.item.variation.store') }}" method="post"
+                enctype="multipart/form-data">
+                @csrf
+                <input type="hidden" value="{{ $item_id }}" name="item_id">
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <!-- Repeater Html Start -->
+                        <div id="repeater">
+                            <!-- Repeater Heading -->
+                            <div class="repeater-heading">
+                                <button class="btn btn-sm btn-primary  repeater-add-btn">
+                                    Add Variant
+                                </button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Repeater Items -->
+                            <div class="items" data-group="test">
+                                <!-- Repeater Content -->
+                                <div class="item-content row">
+                                    @foreach ($languages as $lang)
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-lg-2 control-label">V Name
+                                                    ({{ $lang->code }})
+                                                </label>
+                                                <input type="text" class="form-control" id="inputName"
+                                                    placeholder="{{ $lang->code }}" data-name="name">
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                                <div id="repeater1">
+                                    <!-- Repeater Heading -->
+                                    <div class="repeater-heading">
+                                        <button class="btn btn-sm btn-primary  repeater-add-option">
+                                            Add Option
+                                        </button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <!-- Repeater Items -->
+                                    <div class="optionss" data-group="test1">
+                                        <!-- Repeater Content -->
+                                        <div class="item-content row">
+                                            @foreach ($languages as $lang)
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail" class="col-lg-2 control-label">Option name
+                                                            ({{ $lang->code }})
+                                                        </label>
+                                                        <input type="text" class="form-control" id="inputName1"
+                                                            placeholder="{{ $lang->code }}" data-name="name">
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                        <!-- Repeater Remove Btn -->
+                                        <div class="pull-right repeater-remove-btn">
+                                            <button class="btn btn-sm btn-danger oremove-btn">
+                                                Remove
+                                            </button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- Repeater Remove Btn -->
+                                <div class="pull-right repeater-remove-btn">
+                                    <button class="btn btn-sm btn-danger remove-btn">
+                                        Remove
+                                    </button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <!-- Repeater End -->
+                    </div>
+                </div>
+                {{-- <div id="app">
+                    {{-- <div class="row">
+                        <div class="col-lg-12 p-0">
+                            <div class="form-group">
+                                <label for="" class="d-block mb-2">Variations</label>
+                                <button class="btn btn-primary btn-sm" @click="addVariant">Add Variant</button>
+                            </div>
+                        </div>
+                    </div> --}}
+                {{-- <div class="row variant-box" v-for="(variant, index) in variants" :key="variant.uniqid">
+                        @foreach ($languages as $lang)
+                            <div class="col-lg-2 p-0">
+                                <div class="form-group">
+                                    <label for="">Variant Name ({{ $lang->code }})</label>
+                                    <input name="{{ $lang->code }}_variant_names[]" data-lcode="{{ $lang->code }}"
+                                        type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <input type="text" :name="'index_of_' + `{{ $lang->code }}_` + index" v-model="index">
+                        @endforeach
+                        <div class="col-lg-1 p-0">
+                            <button class="btn btn-danger btn-sm text-white mt-5" @click="removeVariant(index)">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button class="btn btn-primary btn-sm" @click="addOption(index)">Add Option</button>
+                        </div>
+                        <div class="row" v-for="(option, oindex) in variant.options" :key="option.uniqid">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    {{-- index k hidden value value hisebe dhore same variations er jonno id ta db te insert korte hobe --}}
+                {{-- @foreach ($languages as $lang)
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="">Option Name ({{ $lang->code }})</label>
+                                                <input v-model="option.name"
+                                                    :name="index + '_' + `{{ $lang->code }}` + '_' + 'option_names' + '[]'"
+                                                    type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <label for="">Price ({{ $userBs->base_currency_text }})</label>
+                                            <input :name="index + '_prices' + '[]'" type="text" class="form-control ltr"
+                                                autocomplete="off" v-model="option.price">
+                                            <p class="em text-danger mb-0" :id="variant.name + '_prices.' + oindex"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <label for="">Stock </label>
+                                            <input :name="index + '_stocks' + '[]'" type="number" class="form-control ltr"
+                                                autocomplete="off" v-model="option.stock">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <button class="btn btn-danger btn-sm text-white mt-5 rmvbtn"
+                                            @click="removeOption(index, oindex)">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                {{-- </div> --}}
+                <div class="form-group text-center">
+                    <button id="submitBtn" type="submit" class="btn btn-success btn-sm">{{ __('SUBMIT') }}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+@endsection
+
+
+{{-- @section('vuescripts')
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    variants: [],
+                }
+            },
+            methods: {
+                addVariant() {
+                    let n = Math.floor(Math.random() * 11);
+                    let k = Math.floor(Math.random() * 1000000);
+                    let m = String.fromCharCode(n) + k;
+                    this.variants.push({
+                        uniqid: m,
+                        options: []
+                    });
+                },
+                addOption(vKey) {
+                    let n = Math.floor(Math.random() * 11);
+                    let k = Math.floor(Math.random() * 1000000);
+                    let m = String.fromCharCode(n) + k;
+                    this.variants[vKey].options.push({
+                        uniqid: m,
+                        name: '',
+                        price: 0,
+                        stock: 0,
+                    });
+                },
+
+                removeVariant(index) {
+                    this.variants.splice(index, 1);
+                },
+                removeOption(vIndex, oIndex) {
+                    this.variants[vIndex].options.splice(oIndex, 1);
+                },
+            },
+            created() {
+                $.get("{{ route('user.item.variants', $item_id) }}", (datas) => {
+                    for (let i = 0; i < datas.length; i++) {
+                        this.variants.push(datas[i]);
+                    }
+                });
+            }
+        });
+    </script>
+@endsection --}}
+
+@section('scripts')
+    <script>
+        jQuery.fn.extend({
+            createRepeater: function(options = {}, optionso = {}) {
+                var hasOption = function(optionKey) {
+                    return options.hasOwnProperty(optionKey);
+                };
+
+                var option = function(optionKey) {
+                    return options[optionKey];
+                };
+
+
+                var generateId = function(string) {
+                    return string
+                        .replace(/\[/g, '_')
+                        .replace(/\]/g, '')
+                        .toLowerCase();
+                };
+
+                var addItem = function(items, key, fresh = true) {
+                    var itemContent = items;
+                    var group = itemContent.data("group");
+                    var item = itemContent;
+                    var input = item.find('input,select,textarea');
+
+                    input.each(function(index, el) {
+                        var attrName = $(el).data('name');
+                        var skipName = $(el).data('skip-name');
+                        if (skipName != true) {
+                            $(el).attr("name", group + "[" + key + "]" + "[" + attrName + "]");
+                        } else {
+                            if (attrName != 'undefined') {
+                                $(el).attr("name", attrName);
+                            }
+                        }
+                        if (fresh == true) {
+                            $(el).attr('value', '');
+                        }
+                        $(el).attr('id', generateId($(el).attr('name')));
+                        $(el).parent().find('label').attr('for', generateId($(el).attr('name')));
+                    })
+                    var itemClone = items;
+                    /* Handling remove btn */
+                    var removeButton = itemClone.find('.remove-btn');
+                    removeButton.attr('onclick', '$(this).parents(\'.items\').remove()');
+                    var newItem = $("<div class='items'>" + itemClone.html() + "<div/>");
+                    newItem.attr('data-index', key)
+                    newItem.appendTo(repeater);
+                };
+
+
+
+                /* find elements */
+                var repeater = this;
+                var items = repeater.find(".items");
+                var key = 0;
+                var addButton = repeater.find('.repeater-add-btn');
+
+                items.each(function(index, item) {
+                    items.remove();
+                    if (hasOption('showFirstItemToDefault') && option('showFirstItemToDefault') ==
+                        true) {
+                        addItem($(item), key);
+                        key++;
+                    } else {
+                        if (items.length > 1) {
+                            addItem($(item), key);
+                            key++;
+                        }
+                    }
+                });
+
+
+
+                /* handle click and add items */
+                addButton.on("click", function() {
+                    addItem($(items[0]), key);
+                    key++;
+                });
+
+
+            }
+        });
+    </script>
+
+
+    <script>
+        /* Create Repeater */
+        $("#repeater").createRepeater({
+            showFirstItemToDefault: true,
+        });
+    </script>
+    <script>
+        /* Create Repeater */
+        $("#repeater1").createRepeater({
+            showFirstItemToDefault: true,
+        });
+    </script>
+@endsection

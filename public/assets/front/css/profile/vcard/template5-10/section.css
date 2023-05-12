@@ -1,0 +1,189 @@
+.main-btn{
+    padding: 10px 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+.main-btn.btn-color-one{
+    color: #fff;
+    background-color: #1d47da;
+}
+.rating li{
+    display: inline-block;
+}
+.rating li i{
+    color: #f5924c;
+}
+.section-title{
+    margin-bottom: 20px;
+}
+.contact-section-widget,
+.testimonial-section-widget,
+.portfolio-section-widget,
+.video-section-widget,
+.service-section-widget,
+.about-section-widget{
+    padding: 0px 30px 60px;
+}
+.about-section-widget p{
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+.service-section-widget .service-item .content{
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    padding: 20px 15px;
+}
+.service-section-widget .service-item .content h4{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #1d47da;
+}
+.service-section-widget .service-item .content p{
+    margin-bottom: 15px;
+}
+.service-section-widget .service-item .content .button .main-btn{
+    margin-right: 10px;
+}
+.video-section-widget .embed-responsive {
+    border: 10px solid #dbe3ff;
+}
+.portfolio-section-widget .portfolio-item{
+    margin-bottom: 30px;
+}
+.portfolio-section-widget .portfolio-item .portfolio-img{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-section-widget .portfolio-item .portfolio-img .portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+.portfolio-section-widget .portfolio-item .portfolio-img .portfolio-overlay .info h4.title{
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+}
+.portfolio-section-widget .portfolio-item .content{
+    padding-top: 25px;
+}
+.testimonial-section-widget .testimonial-arrows,
+.portfolio-section-widget .portfolio-arrows{
+    display: flex;
+    margin-bottom: 20px;
+}
+.testimonial-section-widget .testimonial-arrows .slick-arrow,
+.portfolio-section-widget .portfolio-arrows .slick-arrow{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #1d47da;
+    color: #fff;
+    font-size: 13px;
+}
+.testimonial-section-widget .testimonial-arrows .slick-arrow.prev,
+.portfolio-section-widget .portfolio-arrows .slick-arrow.prev{
+    margin-right: 10px;
+}
+.testimonial-section-widget .testimonial-item {
+    border: 1px solid #e5e5e5;
+    padding: 20px 15px;
+}
+.testimonial-section-widget .testimonial-item .title-thumb{
+    margin-bottom: 20px;
+}
+.testimonial-section-widget .testimonial-item .thumb {
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.testimonial-section-widget .testimonial-item .title-thumb .thumb img{
+    border-radius: 5px;
+}
+.testimonial-section-widget .testimonial-item .title-thumb .title h5{
+    margin-bottom: 10px;
+}
+.contact-section-widget .form_control{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+.contact-section-widget textarea.form_control{
+    height: 80px;
+    padding-top: 10px;
+}
+
+/* Card-Two css */
+.main-btn.btn-color-two{
+    background-color: #f06a60;
+    color: #fff;
+}
+.service-section-widget.service-section-two .service-item .content h4{
+    color: #f06a60;
+}
+.video-section-widget.video-section-two .embed-responsive {
+    border: 10px solid #f06a6091;
+}
+.testimonial-section-widget.testimonial-section-two .testimonial-arrows .slick-arrow,
+.portfolio-section-widget.portfolio-section-two .portfolio-arrows .slick-arrow{
+    background-color: #f06a60;
+}
+
+/* Card-Three css */
+.main-btn.btn-color-three{
+    background-color: #fa2859;
+    color: #fff;
+}
+.service-section-widget.service-section-three .service-item .content h4{
+    color: #fa2859;
+}
+.video-section-widget.video-section-three .embed-responsive {
+    border: 10px solid #fa2859b3;
+}
+.testimonial-section-widget.testimonial-section-three .testimonial-arrows .slick-arrow,
+.portfolio-section-widget.portfolio-section-three .portfolio-arrows .slick-arrow{
+    background-color: #fa2859;
+}
+
+/* Card-Four css */
+.main-btn.btn-color-four{
+    background-color: #259ff0;
+    color: #fff;
+}
+.service-section-widget.service-section-four .service-item .content{
+    border-color: rgba(255, 255, 255, 0.09);
+}
+.service-section-widget.service-section-four .service-item .content h4{
+    color: #259ff0;
+}
+.video-section-widget.video-section-four .embed-responsive {
+    border: 10px solid #259ff0;
+}
+.testimonial-section-widget.testimonial-section-four .testimonial-arrows .slick-arrow,
+.portfolio-section-widget.portfolio-section-four .portfolio-arrows .slick-arrow{
+    background-color: #259ff0;
+}
+.contact-section-widget.contact-section-four .form_control{
+    background-color: transparent;
+    border-color: #259ff0;
+    color: #fff;
+}
+.contact-section-widget.contact-section-four .form_control::placeholder{
+    color: #fff;
+}

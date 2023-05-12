@@ -1,0 +1,26 @@
+.cv-wrapper{
+    text-align: right;
+}
+.user-info-wrapper .info-box-item .title h5 i,
+.user-info-wrapper .info-box-item .content ul.info-list li i{
+    margin-right: 0px;
+    margin-left: 15px;
+}
+.user-info-wrapper .info-box-item .title:after{
+    right: auto;
+    left: 0;
+    border-right: none;
+    border-left: 22px solid var(--color-white)
+}
+.user-info-wrapper .info-box-item .content .single-timeline:before{
+    left: auto;
+    right: -15px;
+}
+.user-info-wrapper .info-box-item .content .single-timeline:after{
+    left: auto;
+    right: -12px;
+}
+.user-info-wrapper .info-box-item .content .single-timeline .timeline-content ul.list li:before{
+    margin-right: 0px;
+    margin-left: 10px;
+}
